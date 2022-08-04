@@ -1,0 +1,92 @@
+:root {
+	--clr-off-white: #fff;
+  	--clr-orange: #ffa43a;
+
+  	--clr-titles: white;
+  	--clr-paragraph: white;
+  	--clr-background: #121f3d;
+  	--clr-yellow: #8b8b3d;
+  	--clr-green: green;
+
+	--font-family-titles: 'Open sans', sans-serif;
+  	--font-family-text: 'Roboto', sans-serif;
+  	--font-weight-title1: 800;
+
+  	--font-size-small: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+	boder: 0;
+	margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-family-titles);
+	background: var(--clr-background);
+	color: var(--clr-paragraph);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+#keyboard ul {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	width: 45px;
+	height: 45px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	background: transparent;
+	margin: 2px;
+	color: white;
+}
+
+button:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+/* grid styles */
+#grid {
+	margin: 20px 0;
+}
+.grid-row {
+	display: flex;
+	padding: 5px;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 400px;
+	min-width: 380px;
+}
+
+.grid-item {
+	border: 1px solid gray;
+	width: 45px;
+	height: 45px;
+	margin: 0 10px;
+}
+
+.field-green {
+	background: var(--clr-green);
+}
+
+.field-yellow {
+	background: var(--clr-yellow);
+}
+
+.field-gray {
+	background: transparent;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+}
